@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/gh-username-finder/static/css/main.9a8816f8.css",
-    "main.js": "/gh-username-finder/static/js/main.826a8fa7.js",
+    "main.js": "/gh-username-finder/static/js/main.be677676.js",
     "static/media/search.png": "/gh-username-finder/static/media/search.ac6d6a627ce785c79722.png",
     "index.html": "/gh-username-finder/index.html",
     "main.9a8816f8.css.map": "/gh-username-finder/static/css/main.9a8816f8.css.map",
-    "main.826a8fa7.js.map": "/gh-username-finder/static/js/main.826a8fa7.js.map"
+    "main.be677676.js.map": "/gh-username-finder/static/js/main.be677676.js.map"
   },
   "entrypoints": [
     "static/css/main.9a8816f8.css",
-    "static/js/main.826a8fa7.js"
+    "static/js/main.be677676.js"
   ]
 }
