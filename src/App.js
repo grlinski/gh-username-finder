@@ -7,7 +7,7 @@ import { AnimatePresence } from 'framer-motion';
 
 export default function App() {
   function search(username){
-    window.location.href = `/user/${username}`;
+    window.location.href = `gh-username-finder/user/${username}`;
   };
 
   return (
