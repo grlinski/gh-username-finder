@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+import User from './components/User';
+import { AnimatePresence } from 'framer-motion';
 
-function App() {
+export default function App() {
+  function search(username){
+    window.location.href = `/user/${username}`;
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AnimatePresence mode="wait">
+        <Routes>
+          <Route exact path="/" element={<Home onSearch={search}/>}/>
+          <Route exact path="/user/:username" element={<User/>}/>
+        </Routes>
+      </AnimatePresence>
     </div>
   );
 }
-
-export default App;

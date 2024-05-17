@@ -1,0 +1,231 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('reset.css');
+
+:root {
+  --gh-green: #1f883d;
+  --gh-grey: #f6f8fa;
+  --gh-blue: #589be1;
+  --gh-yellow: #f1e05a;
+  --gh-purple: #563d7c;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  width: min(100% - 30px, 1360px);
+  margin-inline: auto;
+  display: flex;
+}
+
+a, a:visited, a:hover, a:active, li, ul {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+main {
+  background-image: url(../img/github-mark.png);
+  height: 90svh;
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  background-size: 350px;
+}
+
+.header {
+  background-color: var(--gh-grey);
+  height: 120px;
+  border: 1px solid rgb(208, 215, 222, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/******************************************************************************
+
+                              Home/Search
+
+******************************************************************************/
+
+button {
+  background-color: var(--gh-green);
+  color: #ffffff;
+  width: 80px;
+  height: 40px;
+  padding: 5px 16px;
+  border-radius: 8px;
+  border: 1px solid rgb(208, 215, 222, 0.5);
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #1c8139;
+}
+
+.search-items {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+input[type=text] {
+  background-color: var(--gh-grey);
+  border: 1px solid rgb(208, 215, 222, 0.5);
+  border-radius: 8px;
+  margin-right: 15px;
+  width: 350px;
+  padding-left: 50px;
+  background: #f6f8fa url(../img/search.png) no-repeat 20px 9px;
+  background-position-y: 60%;
+  background-size: 18px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  width: 20px;
+  height: 20px;
+}
+
+/******************************************************************************
+
+                              User Profile
+
+******************************************************************************/
+
+
+.header-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-title:hover {
+  color: #636c76;
+}
+
+.user-info {
+  margin-top: 15px;
+  width: 30%;
+}
+
+.user-name {
+  font-weight: 500;
+}
+
+.user-username {
+  font-weight: 300;
+  color: grey;
+  font-size: 24px;
+}
+
+.user-pic{
+  border-radius: 50%;
+  border: 1px solid rgb(208, 215, 222, 0.9);
+}
+
+.dot {
+  width: 2px;
+  height: 2px;
+  margin: 0 5px 5px 5px;
+}
+
+.repo-icon {
+  width: 10px;
+  height: 10px;
+  margin-top: 7px;
+}
+
+.location-dot, .followers {
+  margin-right: 5px;
+  margin-top: 12px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.repos {
+  margin-top: 15px;
+  width: 60%;
+  margin-left: 25px;
+}
+
+.repo-title {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.repo-name {
+  color: #0969da;
+  font-weight: 500;
+}
+
+.repo-name:hover {
+  text-decoration: underline;
+}
+
+.repo-box {
+  border-top: 1px solid rgb(208, 215, 222, 0.7);
+  padding: 25px 0;
+}
+
+.repo-section {
+  display: flex;
+  align-content: center;
+  gap: 10px;
+}
+
+.repo-private {
+  color: #636c76;
+  width: 70px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-radius: 10px;
+  height: 25px;
+  line-height: 25px;
+  border: 1px solid rgb(208, 215, 222, 0.9);
+  margin-top: 8px;
+}
+
+.repo-topics {
+  color: #0969db;
+  background-color: #ddf4ff;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-radius: 10px;
+  padding: 0 10px;
+  border: 1px solid rgb(208, 215, 222, 0.9);
+  margin: 15px 0;
+  font-weight: 500;
+}
+
+.not-found-pic {
+  margin-top: 50px;
+}
+
+
+
+
+
+
+
