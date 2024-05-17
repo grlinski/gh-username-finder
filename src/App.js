@@ -1,35 +1,24 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import { BrowserRouter as Router} from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import Home from './components/Home';
 import User from './components/User';
 import { AnimatePresence } from 'framer-motion';
-import { HashRouter } from "react-router-dom";
-
 
 export default function App() {
-  function search(username){
-    if (window.location.href.includes('gh-username-finder')){
-      console.log(window.location.href)
-      window.location.href = `gh-username-finder/user/${username}`;
-    }
+  const navigate = useNavigate();
 
-    else {
-      window.location.href = `/user/${username}`;
-    }
-    
+  function search(username) {
+    navigate(`/gh-username-finder/user/${username}`);
   };
 
   return (
-
-      <div className="App">
-        <AnimatePresence mode="wait">
-          <Routes basename="/">
-            <Route exact path="/" element={<Home onSearch={search} />} />
-            <Route exact path="/user/:username" element={<User />} />
-          </Routes>
-        </AnimatePresence>
-      </div>
-
+    <div className="App">
+      <AnimatePresence>
+        <Routes>
+          <Route exact path="/" element={<Home onSearch={search} />} />
+          <Route exact path="/user/:username" element={<User />} />
+        </Routes>
+      </AnimatePresence>
+    </div>
   );
 }

@@ -1,16 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './assets/style/index.css';
 import App from './App';
-import { HashRouter } from "react-router-dom";
+import { HashRouter as Router } from 'react-router-dom';
 
-import { BrowserRouter as Router} from 'react-router-dom';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.render(
   <React.StrictMode>
-     <Router  basename="/gh-username-finder">
+    <Router>
       <App />
-    </Router >
-  </React.StrictMode>
+    </Router>
+  </React.StrictMode>,
+  document.getElementById('root')
 );

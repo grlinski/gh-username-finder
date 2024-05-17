@@ -10,7 +10,7 @@ export default function User() {
   const [repos, setRepos] = useState([]);
   const { username } = useParams();
   const TOKEN = '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';
-  const USERLINK = (`https://github.com/${username}`)
+  const USERLINK = (`https://github.com/${username}`);
 
   useEffect(() => {
     async function getUser() {

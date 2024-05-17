@@ -1,19 +1,18 @@
 import React, { useState } from 'react';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
-import { motion } from 'framer-motion';
-
+import { useNavigate } from 'react-router-dom';
 
 export default function Home({ onSearch }) {
   const [username, setUsername] = useState('');
+  const navigate = useNavigate();
 
-  function checkInput(event){
+  function checkInput(event) {
     setUsername(event.target.value);
   };
 
-  function search(){
-    if(username.length > 0){
+  function search() {
+    if (username.length > 0) {
       onSearch(username);
+      navigate(`/user/${username}`);
     }
   };
 
@@ -25,10 +24,10 @@ export default function Home({ onSearch }) {
           <input
             className='search-bar'
             type="text"
-            placeholder= "Type [/] to search"
+            placeholder="Type [/] to search"
             value={username}
             onChange={checkInput}
-          ></input>
+          />
           <button onClick={search}>Search</button>
         </div>
       </main>
