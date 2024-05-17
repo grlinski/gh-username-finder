@@ -54,7 +54,7 @@ export default function User() {
             {console.log('user', user)}
             <div className='header'>
               <div className='container header-items'>
-                <button className='home-btn'><Link to="/">Home</Link></button>
+                <button className='home-btn'><Link to="/gh-username-finder">Home</Link></button>
                 <a href={USERLINK}><h1 className='user-title'>Username: {user.login}</h1></a>
                 <div className='header-modal'></div>
               </div>
@@ -117,7 +117,7 @@ export default function User() {
           <div>
             <div className='header'>
               <div className='container header-items'>
-                <button className='home-btn'><Link to="/">Home</Link></button>
+                <button className='home-btn'><Link to="/gh-username-finder">Home</Link></button>
                 <h1 className='user-title'>Username: Not Found</h1>
                 <div className='header-modal'></div>
               </div>

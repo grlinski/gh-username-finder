@@ -15,7 +15,7 @@ export default function App() {
     <div className="App">
       <AnimatePresence>
         <Routes>
-          <Route exact path="/" element={<Home onSearch={search} />} />
+          <Route exact path="/gh-username-finder" element={<Home onSearch={search} />} />
           <Route exact path="/user/:username" element={<User />} />
         </Routes>
       </AnimatePresence>
