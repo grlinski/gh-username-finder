@@ -13,8 +13,8 @@ export default function App() {
     <div className="App">
       <AnimatePresence mode="wait">
         <Routes>
-          <Route exact path="/" element={<Home onSearch={search}/>}/>
-          <Route exact path="/user/:username" element={<User/>}/>
+          <Route exact path="/" element={<Home onSearch={search} />} />
+          <Route exact path="/user/:username" element={<User />} />
         </Routes>
       </AnimatePresence>
     </div>

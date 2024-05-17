@@ -4,7 +4,6 @@ import { useParams, Link } from 'react-router-dom';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
 import { faUserGroup, faLocationDot, faCircle, faStar, faCodeCompare, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { motion } from 'framer-motion';
-import accessToken from './assets/tokens/accessToken.js';
 
 export default function User() {
   const [user, setUser] = useState("");
@@ -119,7 +118,7 @@ export default function User() {
             <div className='header'>
               <div className='container header-items'>
                 <button className='home-btn'><Link to="/">Home</Link></button>
-                <a href={userPageLink}><h1 className='user-title'>Username: Not Found</h1></a>
+                <h1 className='user-title'>Username: Not Found</h1>
                 <div className='header-modal'></div>
               </div>
             </div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
-// import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 
 export default function Home({ onSearch }) {
