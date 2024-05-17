@@ -1,5 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router} from 'react-router-dom';
 import Home from './components/Home';
 import User from './components/User';
 import { AnimatePresence } from 'framer-motion';
@@ -10,13 +11,15 @@ export default function App() {
   };
 
   return (
-    <div className="App">
-      <AnimatePresence mode="wait">
-        <Routes>
-          <Route exact path="/" element={<Home onSearch={search} />} />
-          <Route exact path="/user/:username" element={<User />} />
-        </Routes>
-      </AnimatePresence>
-    </div>
+
+      <div className="App">
+        <AnimatePresence mode="wait">
+          <Routes basename="/">
+            <Route exact path="/" element={<Home onSearch={search} />} />
+            <Route exact path="/user/:username" element={<User />} />
+          </Routes>
+        </AnimatePresence>
+      </div>
+
   );
 }
