@@ -1,6 +1,6 @@
 # GitHub User Profile Search
 
-# [Website](https://grlinski.github.io/gh-username-finder/))
+# [Website](https://grlinski.github.io/gh-username-finder/)
 
 
 # TO DO
